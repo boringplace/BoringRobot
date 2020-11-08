@@ -1,0 +1,3 @@
+[submodule "libraries/IoAbstraction"]
+	path = libraries/IoAbstraction
+	url = https://github.com/mastersin/IoAbstraction
