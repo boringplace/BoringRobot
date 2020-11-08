@@ -1,3 +1,6 @@
 [submodule "libraries/IoAbstraction"]
 	path = libraries/IoAbstraction
 	url = https://github.com/mastersin/IoAbstraction
+[submodule "libraries/TaskManagerIO"]
+	path = libraries/TaskManagerIO
+	url = https://github.com/mastersin/TaskManagerIO

@@ -33,7 +33,7 @@ PORT ?= /dev/ttyACM0
 
 PROJECT_FILE := BoringRobot.ino
 
-LIBRARIES = IoAbstraction
+LIBRARIES = IoAbstraction TaskManagerIO
 ifeq ($(filter install_libraries,$(MAKECMDGOALS)),install_libraries)
     SKETCH_PATH := $(shell $(ARDUINO) --get-pref sketchbook.path 2>/dev/null)
 endif
