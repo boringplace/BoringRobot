@@ -12,5 +12,5 @@ void Robot::status(const char *newStatus) {
 }
 
 void Robot::poll() {
-
+  status("Poll");
 }

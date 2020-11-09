@@ -55,6 +55,8 @@ static void initialRobot() {
   robot.init(name);
   robot.status("Ready");
 
+  log("slots[]", taskManager.checkAvailableSlots(slotString, 10));
+
   pollTaskId = taskManager.scheduleFixedRate(100, [] {
     robot.poll();
   });
@@ -65,6 +67,8 @@ void setup() {
   while (!Serial);
 
   log("Setup BoringRobot");
+
+  log("slots[]", taskManager.checkAvailableSlots(slotString, 10));
 
   taskManager.scheduleOnce(1000, initialRobot);
 }
